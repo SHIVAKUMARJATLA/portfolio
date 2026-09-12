@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b0d" />
+    <meta name="description" content="Portfolio of Shiva Kumar Jatla - AI & ML student, backend developer, and agentic AI builder." />
+    <title>Shiva Kumar Jatla | AI & ML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#hero">SHIVA_KUMAR // AI_ML</a>
+      <span class="availability"><i></i> OPEN TO OPPORTUNITIES</span>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#projects">Systems</a><a href="#playground">Playground</a><a href="#education">Education</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="resume-link" href="resume.pdf" target="_blank" rel="noreferrer">Resume <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI & ML STUDENT · BACKEND DEVELOPER · AGENTIC AI</p>
+          <h1>Building intelligent<br /><em>systems</em> that help.</h1>
+          <p class="intro">I’m Shiva Kumar Jatla, a Computer Science student focused on practical AI, backend engineering and reliable developer-first systems. I build solutions where retrieval, agents and software work together.</p>
+          <ol class="capabilities"><li>Retrieval-Augmented Generation</li><li>Multi-Agent Systems</li><li>FastAPI & REST APIs</li><li>PostgreSQL & ChromaDB</li><li>Problem Solving</li></ol>
+          <div class="hero-actions"><a class="button button-solid" href="#projects">Explore my work <span>↓</span></a><a class="button button-ghost" href="https://github.com/SHIVAKUMARJATLA" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+        </div>
+        <div class="terminal-card reveal" aria-label="System status illustration">
+          <div class="terminal-top"><span>runtime://shiva-ai-lab</span><b><i></i> LIVE [200 OK]</b></div>
+          <div class="terminal-body"><p class="command">$ <span id="typed-command"></span><b class="cursor">_</b></p><p>[SYSTEM:INIT] knowledge base connected</p><p>[SYSTEM:INIT] API boundary active</p><div class="terminal-grid"><div><span>ORCHESTRATOR</span><strong>ONLINE</strong></div><div><span>ACCESSIBLE TOOLS</span><strong>04</strong></div><div><span>APPROVAL MODE</span><strong>GUARDED</strong></div><div><span>MODEL RUNTIME</span><strong>LLAMA 3</strong></div></div><ul><li><b>01</b> document retrieval connected</li><li><b>02</b> FastAPI service healthy</li><li><b>03</b> agent nodes registered</li><li><b>04</b> response streaming enabled</li></ul><p class="prompt">shiva@ai-lab:~$ <span>awaiting_request</span></p></div>
+        </div>
+        <div class="hero-stats reveal"><div><span>Academic projects</span><strong>03</strong></div><div><span>Contest rank</span><strong>#01</strong></div><div><span>Current CGPA</span><strong>8.33</strong></div><div><span>Expected graduation</span><strong>2027</strong></div></div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal"><p class="eyebrow">CORE AI SYSTEMS</p><h2>Architecture, retrieval<br />and <em>useful</em> automation.</h2><p>Selected projects across RAG, agent workflows, recommendation systems and backend APIs.</p></div>
+        <div class="project-list">
+          <article class="project-card reveal open"><button class="project-trigger" aria-expanded="true"><span class="project-number">01 / RAG · EDUCATION</span><span class="badge">FEATURED</span><h3>Academic Regulations AI Assistant</h3><p>Retrieval-Augmented Generation system that answers academic regulation queries from unstructured institutional documents.</p><div class="tag-row"><span>LangGraph</span><span>FastAPI</span><span>ChromaDB</span><span>LLaMA 3</span><span>PostgreSQL</span></div><strong class="project-metric">RAG <small>document intelligence pipeline</small></strong><span class="open-label">CLOSE CASE STUDY <i>↑</i></span></button><div class="project-detail"><p>Built a complete processing path from document chunking and embeddings to semantic search and LLM-generated answers. The FastAPI backend exposes a usable, inspectable API while PostgreSQL records queries and structured metadata.</p><a href="https://github.com/SHIVAKUMARJATLA/ai-rag-assistant" target="_blank" rel="noreferrer">Inspect source ↗</a></div></article>
+          <article class="project-card reveal"><button class="project-trigger" aria-expanded="false"><span class="project-number">02 / AGENTIC AI · TRAVEL</span><span class="badge">SYSTEM</span><h3>TripOrchestrator</h3><p>Multi-agent travel planning system that turns natural-language requests into structured, context-aware travel plans.</p><div class="tag-row"><span>LangGraph</span><span>LangChain</span><span>FastAPI</span><span>Groq</span><span>PostgreSQL</span></div><strong class="project-metric">MULTI-AGENT <small>coordinated planning workflow</small></strong><span class="open-label">OPEN CASE STUDY <i>↓</i></span></button><div class="project-detail"><p>Agent nodes coordinate travel search, itinerary generation and response synthesis. Integrated AviationStack and Tavily for live travel context, with PostgreSQL-backed conversation state for coherent multi-turn interactions.</p><a href="https://github.com/SHIVAKUMARJATLA/TripOrchestrator" target="_blank" rel="noreferrer">Inspect source ↗</a></div></article>
+          <article class="project-card reveal"><button class="project-trigger" aria-expanded="false"><span class="project-number">03 / ML · RECOMMENDATION</span><span class="badge">APP</span><h3>Movie Recommendation System</h3><p>Content-based recommendation application that matches viewer preferences with relevant films through text similarity.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>Streamlit</span><span>TF-IDF</span><span>Cosine Similarity</span></div><strong class="project-metric">TF-IDF <small>personalized discovery engine</small></strong><span class="open-label">OPEN CASE STUDY <i>↓</i></span></button><div class="project-detail"><p>Developed the recommendation engine using TF-IDF vectorization and cosine similarity, then wrapped it in FastAPI endpoints and a Streamlit interface for immediate testing and demonstration.</p><a href="https://github.com/SHIVAKUMARJATLA/Movie-Recommendation" target="_blank" rel="noreferrer">Inspect source ↗</a></div></article>
+        </div>
+      </section>
+
+      <section class="section playground" id="playground">
+        <div class="section-heading reveal"><p class="eyebrow">INTERACTIVE REFERENCE FLOW</p><h2>Agent workflow<br /><em>playground.</em></h2><p>A small simulation of how a bounded AI assistant moves from a user request to a safe, useful answer.</p></div>
+        <div class="playground-grid reveal"><aside class="scenario-list"><p>SCENARIO_INPUT</p><button class="scenario active" data-request="What are the attendance requirements for my semester?" data-steps="retrieve regulations|find relevant sections|compose grounded answer|return citations"><b>01</b><span>Academic regulations<em>RAG retrieval</em></span></button><button class="scenario" data-request="Plan a 3-day Hyderabad trip under ₹15,000." data-steps="collect travel context|search destinations|compose itinerary|save session state"><b>02</b><span>Travel planning<em>Agent orchestration</em></span></button><button class="scenario" data-request="Recommend a thoughtful sci-fi movie for tonight." data-steps="parse viewing preference|vectorize query|rank similarities|return recommendations"><b>03</b><span>Movie discovery<em>Recommendation</em></span></button></aside><div class="agent-console"><div class="console-head"><span>runtime://agent/trace</span><b id="console-status">IDLE</b></div><div class="conversation"><span class="identity">USER REQUEST</span><p id="request-text">What are the attendance requirements for my semester?</p></div><ol id="flow-steps" class="flow-steps"><li><b>01</b><strong>retrieve regulations</strong><em>READY</em></li><li><b>02</b><strong>find relevant sections</strong><em>WAIT</em></li><li><b>03</b><strong>compose grounded answer</strong><em>WAIT</em></li><li><b>04</b><strong>return citations</strong><em>WAIT</em></li></ol><button class="run-button" id="run-flow">Run selected conversation <span>→</span></button><p class="console-prompt">&gt; <span id="console-message">Waiting for execution request_</span></p></div></div>
+      </section>
+
+      <section class="section education" id="education">
+        <div class="section-heading reveal"><p class="eyebrow">ACADEMIC TELEMETRY</p><h2>Learning with<br /><em>intent.</em></h2><p>Building strong foundations in computer science alongside applied AI development.</p></div>
+        <div class="education-grid reveal"><article><span>01</span><p class="date">2024 — 2027 (EXPECTED)</p><h3>B.Tech in CSE<br />(AI & ML)</h3><p>B V Raju Institute of Technology</p><div class="education-stat"><span>CGPA</span><strong>8.33<span>/10</span></strong></div></article><article><span>02</span><p class="date">2021 — 2024</p><h3>Diploma in Computer Science Engineering</h3><p>St. Mary’s Group of Institutions</p><div class="education-stat"><span>CGPA</span><strong>8.96<span>/10</span></strong></div></article><article class="achievement"><span>03</span><p class="date">ACHIEVEMENT</p><h3>Rank 1</h3><p>Out of 1,153 participants in BeingZero’s Speed and Accuracy 210 coding contest.</p><div class="education-stat"><span>RANK</span><strong>#01</strong></div></article></div>
+      </section>
+
+      <section class="section stack" id="stack"><div class="section-heading reveal"><p class="eyebrow">SYSTEMS PROFICIENCY MATRIX</p><h2>Tools I use to<br /><em>ship</em> systems.</h2></div><div class="stack-grid reveal"><article><span>01</span><h3>AI & Agentic Systems</h3><p>RAG · LangGraph · LangChain · NLP · Prompt Engineering · LLaMA 3</p></article><article><span>02</span><h3>Backend & APIs</h3><p>Python · FastAPI · REST APIs · SQL · Object-Oriented Programming</p></article><article><span>03</span><h3>Data & Storage</h3><p>PostgreSQL · ChromaDB · DBMS · Vector Search · Query Logging</p></article><article><span>04</span><h3>Engineering Foundation</h3><p>Data Structures & Algorithms · OS · Computer Networks · Git · GitHub</p></article></div><div class="certifications reveal"><span>CREDENTIALS</span><p>Data Analytics with Python — NPTEL &nbsp; / &nbsp; Python — HackerRank &nbsp; / &nbsp; SQL — HackerRank</p><a href="https://leetcode.com/u/shivakumarjatla" target="_blank" rel="noreferrer">View LeetCode ↗</a></div></section>
+
+      <section class="contact section" id="contact"><div class="contact-inner reveal"><p class="eyebrow">secure-channel://contact <i></i> READY</p><p class="tiny">START A CONVERSATION</p><h2>Have an interesting<br /><em>problem</em> to solve?</h2><p>I’m open to internships, software engineering and AI/ML opportunities.</p><div class="contact-links"><a href="mailto:24215a6615@gmail.com">Email ↗</a><a href="https://github.com/SHIVAKUMARJATLA" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/shiva-kumar-jatla-5b2389320/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+    </main>
+    <footer><span>SHIVA_KUMAR // AI_ML</span><span>PYTHON · RAG · AGENTS · BACKEND</span><span>© <span id="year"></span></span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
